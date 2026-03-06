@@ -42,6 +42,66 @@ The main reference for this module is `module-8-sql-relational-databases/introdu
 
 ---
 
+### **Concepts in more depth**
+
+#### Relational modelling basics
+
+Relational databases work best when you design **normalised** schemas:
+
+- Each table captures one type of entity (customer, order, product).  
+- Redundant data is minimised by linking tables via keys instead of copying columns everywhere.  
+- Relationships are expressed through **foreign keys**.
+
+Practical rules of thumb:
+
+- Give every table a clear **primary key** (e.g. `id`, `order_id`).  
+- Use integer or UUID keys rather than natural keys (like email) when possible.  
+- Use foreign keys to enforce referential integrity where your database supports it.
+
+#### Thinking in sets, not loops
+
+SQL is a **set‑based** language:
+
+- A `SELECT` query describes what subset of rows and columns you want, not how to loop over them.  
+- Aggregations (`GROUP BY`) summarise sets of rows into single rows.
+
+This mindset is similar to vectorised operations in NumPy or pandas: you describe transformations at the column / table level rather than row‑by‑row.
+
+#### Filtering, grouping, and order of operations
+
+Rough order of clauses in a typical query:
+
+```sql
+SELECT   ...    -- choose columns / expressions
+FROM     ...    -- choose tables and joins
+WHERE    ...    -- filter individual rows
+GROUP BY ...    -- define groups
+HAVING   ...    -- filter groups
+ORDER BY ...    -- final sort
+LIMIT    ...    -- final row limit
+```
+
+Key ideas:
+
+- `WHERE` filters **before** grouping; `HAVING` filters **after** grouping.  
+- Columns in `GROUP BY` plus aggregated expressions are the only ones you can `SELECT` (unless your DB offers extensions).
+
+#### Joins from an analyst’s point of view
+
+The join logic mirrors what you already do in pandas:
+
+- `INNER JOIN` – keep rows with matches on both sides (like inner merge).  
+- `LEFT JOIN` – keep all rows from the left; fill missing values from the right with `NULL`.  
+- `RIGHT JOIN` and `FULL OUTER JOIN` – less common in day‑to‑day analytics but useful in audits and reconciliations.
+
+Before writing a join, be explicit about:
+
+- Which table is the **primary** one (the thing you absolutely don’t want to drop).  
+- Whether the key is unique on one side or both.  
+- Whether you are comfortable with duplicate rows if the key is not unique.
+
+---
+
 ### **Guided example – School database**
 
 From `module-8-sql-relational-databases/introduction.md`, you can follow along with the `school` database:

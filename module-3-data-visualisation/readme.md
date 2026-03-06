@@ -37,6 +37,47 @@ This module teaches you how to create clear, publication‑quality plots using *
 
 ---
 
+### **Concepts in more depth**
+
+#### When to use which chart?
+
+- **Histogram** – To understand the distribution of a single numeric variable (shape, centre, spread, outliers).  
+  - Good for: exam scores, heights, incomes.  
+- **Boxplot** – To compare distributions **across groups** (e.g. score by class, salary by department).  
+  - Encodes median, quartiles, and potential outliers compactly.  
+- **Scatter plot** – To investigate relationships between two numeric variables (e.g. height vs weight, study time vs score).  
+  - Patterns: linear, non‑linear, clusters, heteroskedasticity.  
+- **Bar chart** – To compare aggregated values by category (e.g. average score by group, count of students per major).  
+  - Should almost always be based on **aggregated** data, not raw observations.
+
+Choosing an appropriate chart is as important as writing correct code: the goal is to make the intended comparison **visually obvious**.
+
+#### Visual encodings and clarity
+
+Effective plots use:
+
+- **Position** on a common scale (x or y axis) as the primary encoding – humans are very good at comparing positions.  
+- **Length** (bar height), then **colour** or **shape** for additional variables.  
+- **Minimal clutter**: avoid 3D effects, unnecessary gridlines, or gratuitous colours.
+
+Useful questions to ask when designing a plot:
+
+- What exactly should the viewer be able to compare or read off quickly?  
+- Is there any redundant decoration (chart junk) that can be removed?  
+- Are axes, units, and categories clearly labelled?
+
+#### Storytelling with multiple views
+
+In practice, a single plot rarely tells the whole story. A typical workflow:
+
+1. Start with **univariate views** (histograms, boxplots) to understand each variable.  
+2. Add **bivariate views** (scatter, grouped boxplots) to explore relationships.  
+3. Finish with a **small set of polished plots** that directly support your key conclusions.
+
+Notebook‑style analysis often alternates between **code cells** and **markdown cells** where you describe what each figure shows in plain language.
+
+---
+
 ### **Guided example – Visualising grades**
 
 We will use `data/grades.csv` to explore exam score distributions.

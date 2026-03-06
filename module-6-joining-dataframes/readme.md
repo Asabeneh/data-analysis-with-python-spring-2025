@@ -40,6 +40,55 @@ Use the CSV files in the `data/` folder:
 
 ---
 
+### **Concepts in more depth**
+
+#### Thinking relationally
+
+In relational data, each table usually represents **one type of entity**:
+
+- `students` – one row per student.  
+- `courses` – one row per course.  
+- `enrollments` – one row per student–course pair.
+
+Primary keys (like `student_id`, `course_id`) uniquely identify rows in their home tables.  
+Foreign keys are columns in other tables that **refer back** to those keys (e.g. `enrollments.student_id`).
+
+Good relational design makes joins:
+
+- **Predictable** – you know which keys to join on.  
+- **Safe** – you avoid unintended duplication or loss of rows.
+
+#### Join semantics and row counts
+
+When debugging joins, always think in terms of **row counts** and **matching keys**:
+
+- **INNER JOIN** – keep only rows where keys appear in both tables.  
+  - Row count ≤ min(size of left, size of right).  
+- **LEFT JOIN** – keep all rows from the left, fill with `NaN` where there is no match on the right.  
+  - Row count = size of left.  
+- **RIGHT JOIN** – mirror of left join.  
+- **OUTER JOIN** – keep all keys from both tables.  
+  - Row count ≥ max(size of left, size of right).
+
+If row counts explode unexpectedly, check:
+
+- Whether keys are truly unique on at least one side.  
+- Whether you accidentally joined on a non‑key column (like names instead of IDs).
+
+#### Handling missing joins and data quality
+
+Missing values after joins are analytically meaningful:
+
+- A `NaN` in right‑hand columns after a LEFT join means “no matching record” (e.g. students with no enrollments).  
+- A `NaN` after an OUTER join can mean “present only in one side” (e.g. courses with no students).
+
+In reporting, you often:
+
+- Count unmatched rows to understand data quality (e.g. orphan enrollments, missing grades).  
+- Decide whether to **exclude**, **flag**, or **impute** such cases depending on the question.
+
+---
+
 ### **Guided example – Simple enrollment join**
 
 ```python

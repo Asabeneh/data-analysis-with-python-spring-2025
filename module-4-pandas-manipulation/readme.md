@@ -35,6 +35,68 @@ This module focuses on **pandas**, the essential library for working with tabula
 
 ---
 
+### **Concepts in more depth**
+
+#### Series vs DataFrame and tidy data
+
+- A **Series** is a single column of data with an index – conceptually like a labelled vector.  
+- A **DataFrame** is a table of multiple Series that share the same index – like a labelled matrix.
+
+In analytics work we often aim for **tidy data**:
+
+- Each **row** is one observation (e.g. one student, one invoice line, one measurement in time).  
+- Each **column** is one variable (e.g. `age`, `score`, `gender`).  
+- Each **table** contains observations of one “kind” of thing.
+
+Many data‑cleaning tasks are about reshaping messy inputs (wide vs long, pivoted vs unpivoted) into this tidy structure so that filtering, grouping, and merging become straightforward.
+
+#### Indexing: labels vs positions
+
+Pandas gives two main ways to address data:
+
+- `.loc` – label‑based: use row/column labels.  
+  - `df.loc[5, "score"]` – row with index label `5`, column `"score"`.  
+- `.iloc` – position‑based: use integer positions.  
+  - `df.iloc[0, 2]` – first row, third column.
+
+Good practice:
+
+- Use `.loc` when you care about **semantic labels** (student IDs, dates).  
+- Use `.iloc` when you treat the data like a matrix (e.g. for quick sanity checks or when positions are what matter).
+
+#### Groupby and aggregation patterns
+
+`groupby` is central to analytical work:
+
+```python
+df.groupby("course_id")["score"].agg(["count", "mean", "std"])
+```
+
+Typical patterns:
+
+- Group by one or more keys.  
+- Aggregate with one or multiple functions.  
+- Reset the index (`.reset_index()`) when you want a clean table again.
+
+Think in terms of **questions**:  
+“Per course, what is the average score and how many unique students took it?” becomes a simple `groupby` with `nunique` and `mean`.
+
+#### Method chaining and readability
+
+Instead of writing many intermediate variables, you can often write clearer pipelines:
+
+```python
+(df
+  .query("score < 60")
+  .assign(score_z=lambda d: (d["score"] - d["score"].mean()) / d["score"].std())
+  .sort_values("score")
+)
+```
+
+This style keeps the sequence of transformations in one place and mirrors the logical order of operations.
+
+---
+
 ### **Guided example – Students and courses**
 
 We will use `data/students.csv` and `data/enrollments.csv` to combine student information with course enrolments.

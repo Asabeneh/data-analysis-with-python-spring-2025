@@ -30,6 +30,55 @@ This module teaches you how to use **descriptive statistics** to summarise and i
 
 ---
 
+### **Concepts in more depth**
+
+#### Central tendency and robustness
+
+- **Mean** – arithmetic average; sensitive to extreme values.  
+- **Median** – middle value when sorted; more robust to outliers.  
+- **Mode** – most frequent value; useful for categorical or discrete data.
+
+When distributions are skewed (e.g. incomes, waiting times), the **median** often gives a more meaningful sense of a “typical” value than the mean.
+
+#### Spread and variability
+
+- **Variance / standard deviation** – measure how tightly data cluster around the mean.  
+  - Higher standard deviation means more variability.  
+- **IQR (interquartile range)** – distance between 25th and 75th percentiles.  
+  - Robust to outliers; often used in boxplots and outlier rules.
+
+Interpretation example:  
+If group A and group B have similar means but group B has much higher standard deviation, then outcomes are more variable/unequal in group B.
+
+#### Distribution shape
+
+- **Skewness** – asymmetry of a distribution.  
+  - Right‑skewed: long tail to the right (e.g. incomes).  
+  - Left‑skewed: long tail to the left.  
+- **Kurtosis** – heaviness of the tails relative to a normal distribution.  
+  - High kurtosis: more extreme values than normal.  
+  - Low kurtosis: fewer extreme values.
+
+You rarely need exact formulas in day‑to‑day work, but recognising skewed or heavy‑tailed distributions helps you choose appropriate summaries and visualisations.
+
+#### Correlation vs. causation
+
+Correlation coefficients (e.g. Pearson’s \(r\)) summarise **linear association** between two numeric variables:
+
+- \( r \approx 1 \): strong positive linear relationship.  
+- \( r \approx -1 \): strong negative linear relationship.  
+- \( r \approx 0 \): little or no linear relationship.
+
+Important caveats:
+
+- Correlation **does not imply causation**.  
+- Outliers can dramatically change the correlation.  
+- Non‑linear relationships can have low \(r\) even if variables are strongly related.
+
+As a rule, always pair correlation coefficients with **scatter plots** so you can see the underlying pattern.
+
+---
+
 ### **Guided example – Health dataset**
 
 We will use `data/500_Person_Gender_Height_Weight_Index.csv` to compute basic summaries.

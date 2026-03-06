@@ -39,6 +39,61 @@ The main references for this module are `module-9-intro-ml/enhanced-ml-guide.md`
 
 ---
 
+### **Concepts in more depth**
+
+#### Framing the problem
+
+Before touching code, be explicit about:
+
+- **Target** (label) – what are you trying to predict? (e.g. churn, price, default).  
+- **Inputs** (features) – what information is available at prediction time?  
+- **Granularity** – what is one row? (customer, transaction, session).  
+- **Objective** – accuracy, profit, recall on a particular class, etc.
+
+Good framing helps you choose between:
+
+- **Regression** – predicting continuous values (price, demand, time).  
+- **Classification** – predicting discrete labels (spam vs ham, churn vs not, class A/B/C).
+
+#### Train/validation/test and overfitting
+
+Models can **memorise** training data instead of learning patterns that generalise.  
+To detect and control overfitting:
+
+- Split data into **train** and **test** (and often a separate **validation** set or use cross‑validation).  
+- Train on the train set, tune hyperparameters on validation, report performance on test **only once**.
+
+Tell‑tale symptoms:
+
+- Very high training accuracy, much lower test accuracy → overfitting.  
+- Both low → underfitting (model too simple or features not informative).
+
+#### Bias–variance trade‑off (intuitively)
+
+- **High bias** – model is too simple, misses important patterns (underfitting).  
+- **High variance** – model is too complex, captures noise as if it were signal (overfitting).
+
+Simple models (like linear/logistic regression) have higher bias but lower variance.  
+Flexible models (like deep trees, large neural nets) have lower bias but higher variance.
+
+Regularisation, careful feature selection, and more data are standard tools to manage this trade‑off.
+
+#### Evaluation metrics beyond accuracy
+
+Accuracy alone can be misleading, especially with **imbalanced classes** (e.g. 99% non‑fraud, 1% fraud):
+
+- **Precision** – of the items predicted positive, how many were actually positive?  
+- **Recall** – of the actual positives, how many did we catch?  
+- **F1 score** – harmonic mean of precision and recall; balances both.  
+- **ROC AUC** – probability the model ranks a random positive higher than a random negative.
+
+In practice:
+
+- Use **confusion matrices** to understand errors by type.  
+- Choose metrics that align with business costs (false positives vs false negatives).
+
+---
+
 ### **Guided example – Iris flower classification**
 
 We use the classic **Iris** dataset (available via scikit‑learn) to build a classification model.

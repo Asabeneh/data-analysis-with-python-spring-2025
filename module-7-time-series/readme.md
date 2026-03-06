@@ -32,6 +32,63 @@ This module introduces **time series analysis** and extends your pandas skills t
   - Rolling mean, sum, min, max.  
 - Combining time series with joins/merges.
 
+---
+
+### **Concepts in more depth**
+
+#### Time indexes and time zones
+
+Time series analysis almost always benefits from a proper **time index**:
+
+- Convert date/time strings once with `pd.to_datetime`.  
+- Set the index to this datetime column and sort it.  
+- Use label‑based slicing (`.loc["2023"]`, `.loc["2023-05"]`) for very readable subsetting.
+
+In real‑world data, be mindful of:
+
+- **Time zones** – logs from different systems may use different zones; convert to a common one (often UTC).  
+- **Granularity** – decide if you care about days, hours, minutes, etc. and normalise accordingly.
+
+#### Trend, seasonality, and noise
+
+Most time series can be thought of as:
+
+- **Trend** – long‑term increase or decrease.  
+- **Seasonality** – repeating patterns (daily, weekly, yearly).  
+- **Noise** – random fluctuations.
+
+Rolling averages and resampling help separate these components:
+
+- Daily data → weekly/monthly sums or means to reveal trend and seasonality.  
+- Rolling windows to smooth out short‑term noise.
+
+Understanding these components is critical before you attempt any forecasting.
+
+#### Resampling pitfalls
+
+When resampling, always be explicit about **how** you aggregate:
+
+- Use `.sum()` for quantities that accumulate over time (e.g. sales, counts).  
+- Use `.mean()` for quantities that make sense as averages (e.g. temperature, conversion rate).  
+- Be careful with missing periods – gaps can distort averages and rolling windows.
+
+Also watch alignment:
+
+- `"M"` usually labels periods at month‑end; `"MS"` labels at month‑start.  
+- Misinterpreting labels can lead to confusing charts or incorrect joins with other time series.
+
+#### Joining multiple time series
+
+When combining different time series (e.g. traffic and conversions):
+
+- Decide on a **common frequency** (daily, weekly).  
+- Resample each series to that frequency.  
+- Join on the datetime index using `.join` or `merge` on a date column.
+
+This ensures comparability and avoids subtle misalignment (e.g. comparing weekly sums to daily counts).
+
+---
+
 Use the notebook `module-7-time-series/time-series-analysis.ipynb` as a companion for code‑along practice.
 
 ---
