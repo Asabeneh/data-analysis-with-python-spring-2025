@@ -77,6 +77,42 @@ Important caveats:
 
 As a rule, always pair correlation coefficients with **scatter plots** so you can see the underlying pattern.
 
+#### From description to inference
+
+Descriptive statistics summarise **what you observed** in your sample. Inference is about what you can reasonably say about the **population**:
+
+- **Confidence interval (CI)** – a range of plausible values for a population parameter (e.g. mean BMI).  
+- **Hypothesis test** – a formal way to ask “is this difference likely due to chance?”.
+
+Simple example for a two‑sample comparison:
+
+- \(H_0\): mean BMI is the same for men and women.  
+- \(H_1\): mean BMI is different.  
+- You compute a test statistic (e.g. t‑test) and a p‑value; if \(p\) is very small, you have evidence against \(H_0\).
+
+In practice, you combine:
+
+- **Effect size** (difference in means).  
+- **Uncertainty** (CI width).  
+- **Context** (is the difference practically important?).
+
+#### A/B testing mindset
+
+Many product and business questions show up as A/B tests:
+
+- Group A – current version (control).  
+- Group B – new version (treatment).
+
+Key ideas:
+
+- Randomly assign units (users, sessions, emails) to A or B.  
+- Measure an outcome (conversion, click‑through, time on site).  
+- Compare group‑level metrics with CIs or hypothesis tests.
+
+Even when you don’t run formal tests in this course, think in A/B terms:
+
+- “Is the difference I see between groups large enough and consistent enough to matter, or could it be random noise?”
+
 ---
 
 ### **Guided example – Health dataset**

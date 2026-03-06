@@ -158,6 +158,89 @@ If you are teaching or being evaluated, projects can be reviewed on:
 
 ---
 
+### **Part C – Job‑ready skills checklist**
+
+To be competitive for junior data analyst / entry‑level data science roles, you should aim to be comfortable with:
+
+- **Python for data**
+  - NumPy arrays and vectorised operations.  
+  - Pandas for loading, cleaning, joining, aggregating, and reshaping data.  
+  - Matplotlib/Seaborn for clear, purposeful plots.
+
+- **Statistics & experiments**
+  - Descriptive statistics and distribution shapes.  
+  - Basic inference: confidence intervals, simple hypothesis tests, and A/B testing logic.  
+  - Understanding correlation vs. causation and common pitfalls.
+
+- **SQL & data modelling**
+  - Writing SELECT queries with filters, joins, aggregates, and subqueries.  
+  - Understanding relational schemas, primary/foreign keys, and normalisation basics.
+
+- **Workflow & reproducibility**
+  - Using Git/GitHub for version control (clone, branch, commit, push, pull request).  
+  - Organising projects with clear folder structures (`data/`, `notebooks/`, `src/`, `reports/`).  
+  - Capturing dependencies (e.g. `requirements.txt` or `environment.yml`).
+
+- **BI & communication**
+  - Building at least one simple dashboard in Power BI or Tableau based on a project dataset.  
+  - Writing short, audience‑appropriate summaries of findings (1–2 pages or slide decks).  
+  - Presenting charts that directly support business questions.
+
+- **ML foundations (for DS/ML‑leaning roles)**
+  - End‑to‑end workflows with scikit‑learn: split → train → evaluate → iterate.  
+  - Knowing when to use regression vs classification, simple model tuning, and basic model comparison.  
+  - Understanding overfitting, regularisation at a high level, and evaluation metrics.
+
+Use this checklist alongside the modules to identify which areas you already cover and which need extra practice or external resources.
+
+---
+
+### **Part D – Building a portfolio**
+
+A strong portfolio ties everything together. Aim for **3–5 polished projects** that show variety and depth:
+
+- **Project structure**
+  - Clear `README.md` explaining the problem, data, approach, and key results.  
+  - Clean notebooks (or scripts) with narrative, not just code dumps.  
+  - Logical folder layout: `data/`, `notebooks/`, `src/`, `figures/`, `reports/`.
+
+- **Project types to include**
+  - At least **one descriptive/diagnostic analysis** (like the Employee project).  
+  - At least **one ETL + SQL project** (like the Cat API → DB project).  
+  - At least **one ML project** (e.g. classification on a real dataset).  
+  - Optionally, **one dashboard project** (Power BI / Tableau / Looker).
+
+- **Storytelling**
+  - Start each project with 2–3 concrete questions.  
+  - End with a short section: “Key Findings” and “Recommendations / Next Steps”.  
+  - Include at least one visual that would make sense in a stakeholder meeting.
+
+Host these projects on GitHub (or similar), and link to them from your CV and LinkedIn.
+
+---
+
+### **Part E – Interview and practical test prep**
+
+Most data roles involve:
+
+- **Technical screens** – short coding or SQL challenges.  
+- **Take‑home assignments** – mini‑projects similar to your capstones.  
+- **Behavioural/communication questions** – about how you work with stakeholders and handle ambiguity.
+
+To prepare:
+
+- Practise **whiteboard‑style** or notebook‑style pandas and SQL questions (filtering, grouping, joins).  
+- Time‑box yourself doing small Kaggle problems or LeetCode‑style SQL exercises.  
+- Be ready to walk through one of your portfolio projects in depth:
+  - What was the goal?  
+  - How did you clean and model the data?  
+  - What trade‑offs did you make?  
+  - What impact would your findings have on the business?
+
+Treat this module as your **job‑readiness hub**: once you can comfortably check off most items in Parts C–E, you’re in a strong position to start applying for junior data roles.
+
+---
+
 ### **Navigation**
 
 - Back to [Course overview](../readme.md)  
