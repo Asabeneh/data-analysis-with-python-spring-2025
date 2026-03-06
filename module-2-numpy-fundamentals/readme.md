@@ -31,6 +31,78 @@ This module teaches you how to use **NumPy**, the core library for fast numerica
 
 ---
 
+### **Concepts in more depth**
+
+#### Why NumPy instead of plain Python lists?
+
+Python lists are flexible, but they are **not optimised for numerical computing**:
+
+- A list like `[1, 2, 3]` stores references to Python integer objects; operations like `sum()` loop in Python space.  
+- A NumPy array stores numbers in a **contiguous block of memory** with a fixed data type (e.g. 64‑bit floats).  
+- Vectorised operations (e.g. `a + b`, `a * 2`) are computed in optimised C code, often using CPU vector instructions.
+
+Benefits:
+
+- **Speed** – operations on large arrays are much faster than pure‑Python loops.  
+- **Expressiveness** – formulas look like maths (`bmi = weight / height**2`) instead of nested loops.  
+- **Interoperability** – many libraries (pandas, SciPy, scikit‑learn) expect or return NumPy arrays.
+
+#### Array shapes and ranks
+
+Every NumPy array has:
+
+- A **shape** – a tuple showing its dimensions, e.g. `(5,)`, `(3, 4)`, `(10, 3, 32, 32)`.  
+- A **rank** – the number of dimensions (1D, 2D, 3D, …).
+
+Examples:
+
+- Heights of 5 people: shape `(5,)` – a 1D array.  
+- A 3×4 matrix: shape `(3, 4)` – 2D array (rows × columns).  
+- A batch of 10 RGB images 32×32: shape `(10, 3, 32, 32)` – 4D array.
+
+Understanding shapes is crucial for:
+
+- Debugging broadcasting issues.  
+- Making sure aggregations happen along the intended axis (`axis=0` vs `axis=1`).  
+- Preparing data for ML models (e.g. `(n_samples, n_features)`).
+
+#### Broadcasting explained
+
+Broadcasting is NumPy’s set of rules for combining arrays of **different but compatible shapes**.
+
+Examples:
+
+- Add a scalar to an array:  
+  - `a` has shape `(3,)`, `b` is a scalar → result shape `(3,)`.  
+- Add a 1D array to each row of a 2D array:  
+  - `A` has shape `(4, 3)`, `b` has shape `(3,)` → `b` is “stretched” to `(1, 3)` then `(4, 3)`.
+
+Two dimensions are compatible when:
+
+- They are equal, or  
+- One of them is 1.
+
+If you get a `ValueError: operands could not be broadcast together`, inspect `.shape` for each array and check against these rules.
+
+#### Boolean masks and advanced indexing
+
+Boolean arrays are a powerful way to **filter** data without loops:
+
+```python
+heights = np.array([160, 172, 181, 155])
+mask = heights > 170          # array([False, True, True, False])
+tall = heights[mask]          # array([172, 181])
+```
+
+You can combine masks with logical operations:
+
+- `(heights > 170) & (heights < 180)`  
+- `(bmi >= 25) & (gender == "Male")`
+
+This style of indexing is essential for writing **readable and efficient** data analysis code.
+
+---
+
 ### **Guided example – BMI with NumPy**
 
 We will use `data/500_Person_Gender_Height_Weight_Index.csv` to compute **Body Mass Index (BMI)**.

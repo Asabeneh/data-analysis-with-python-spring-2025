@@ -31,6 +31,67 @@ This module sets up your environment and introduces the full data analysis lifec
 
 ---
 
+### **Concepts in more depth**
+
+#### What is data analysis, really?
+
+At a high level, data analysis is about **answering questions with evidence**.  
+You typically move through three flavours of questions:
+
+- **Descriptive** – What is happening?  
+  - Examples: What is the average order value? How many users visited last week?  
+- **Diagnostic** – Why is it happening?  
+  - Examples: Why did revenue drop last month? Which segments churn more?  
+- **Predictive** – What is likely to happen next?  
+  - Examples: Will this customer churn? How many sales will we have next quarter?
+
+A good analyst is explicit about **which type of question** they are answering, and chooses tools accordingly (summary tables, visualisations, or predictive models).
+
+#### Data types and file formats
+
+When you work on real problems, you will encounter three broad categories of data:
+
+- **Structured data** – Fits nicely into tables with rows and columns.  
+  - Examples: CSV exports from a CRM, SQL tables, Excel sheets.  
+- **Semi‑structured data** – Has a consistent structure but not fixed columns.  
+  - Examples: JSON from web APIs, log files, event streams.  
+- **Unstructured data** – Free‑form content.  
+  - Examples: raw text, PDFs, images, audio.
+
+Your job as an analyst is often to **turn semi‑structured and unstructured data into structured form** so that tools like pandas and SQL can work with it.
+
+Common file formats you will see:
+
+- `.csv`, `.tsv` – Plain text tables, excellent for most analytics tasks.  
+- `.xlsx` – Excel workbooks; convenient for business users but less ideal for version control.  
+- `.json`, `.xml` – Hierarchical or key–value structures, common for APIs and logs.  
+- `.parquet`, `.feather` – Columnar formats optimised for big‑data tooling (Spark, cloud warehouses).
+
+#### The data analysis workflow
+
+Most real projects follow a loop like this:
+
+1. **Collect** – Identify data sources (databases, APIs, files, logs) and extract data.  
+2. **Clean** – Fix types, handle missing values, remove duplicates, correct obvious errors.  
+3. **Explore** – Use summary statistics and visualisations to understand distributions and relationships.  
+4. **Model** – (Optional) Build statistical or ML models to make predictions or quantify effects.  
+5. **Communicate** – Turn findings into slides, reports, dashboards, or notebooks that answer the original questions.
+
+The tools in this course (NumPy, pandas, Matplotlib, SQL, ML libraries) fit into different parts of this workflow. In this first module we focus on **Collect + initial Clean + basic Explore**.
+
+#### Ethics and responsible analysis
+
+Even small classroom projects are good opportunities to practice **responsible data handling**:
+
+- **Privacy** – Avoid sharing raw personal identifiers (names, emails, phone numbers). Prefer anonymised or synthetic data when teaching or demoing.  
+- **Consent & purpose** – Understand why the data was collected and whether your use is aligned with that purpose.  
+- **Bias** – Ask whether the dataset systematically over‑ or under‑represents groups (by gender, geography, income, etc.). Be cautious when drawing general conclusions from biased data.  
+- **Transparency** – Document your assumptions, cleaning steps, and limitations so others can review or reproduce your work.
+
+As you move into later modules (statistics and ML), these principles become even more important.
+
+---
+
 ### **Guided example – First look at a dataset**
 
 We will use `data/weight-height.csv`, a simple dataset with people’s heights and weights.
