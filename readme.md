@@ -1,125 +1,75 @@
-### **Week 1: Introduction to Data Analysis & Practicalities**  
+# **Data Analysis with Python**
 
-- **Objective**: Set up the environment and understand the data lifecycle.  
-- **Tools**: Python, Visual Stuido Code, Jupyter Notebook on Anaconda, Google Colab.  
-- **Topics**:  
-  - What is data analysis? (Descriptive vs. diagnostic vs. predictive).  
-  - Installing Python libraries (`pip`, `conda`).  
-  - Data types (structured, semi struncture, unstructured data).  
-  - Introduction to datasets (CSV, Excel, SQL).  
-  - Common File fomats of datasets(.txt, .csv, .tsv, .json. .xml, .xlsx)
-  - Ethics in data handling (GDPR, privacy).  
-  - **Hands-on**: Loading a dataset and basic exploration.
+This repository is a complete, hands‑on introduction to **data analysis with Python**.  
+You will work with real datasets, learn the core libraries (NumPy, pandas, Matplotlib, SciPy), and complete practice exercises and capstone projects.
+
+The material is organised into **modules**. Each module has its own `readme.md` with explanations, code examples, and exercises.
 
 ---
 
-### **Week 2: NumPy Fundamentals**  
+## **How to use this repository**
 
-- **Objective**: Master array operations for numerical computing.  
-- **Tools**: NumPy.  
-- **Topics**:  
-  - Creating arrays (1D, 2D, 3D).  
-  - Array operations (reshaping, slicing, broadcasting).  
-  - Mathematical functions (aggregations, linear algebra).  
-  - Random sampling (normal, uniform distributions).  
-  - **Hands-on**: Solving numerical problems (e.g., Random data generation, matrix multiplication, ).
+- **Environment**
+  - Install Python (3.9+ recommended).  
+  - Use VS Code, JupyterLab, or Google Colab.  
+  - Create and activate a virtual environment if needed; install libraries with `pip` or `conda`.
 
----
+- **Notebooks**
+  - Open the notebooks under `module-*` (for example `module-1/data_analysis_libs.ipynb`, `module-2/NumPy.ipynb`, etc.).  
+  - Use them alongside the corresponding module descriptions for extra examples and space to experiment.
 
-### **Week 3: Data Visualization with Matplotlib**  
+- **Datasets**
+  - Most examples and exercises use the CSV files in the `data/` folder (e.g. `weight-height.csv`, `500_Person_Gender_Height_Weight_Index.csv`, `students.csv`, `enrollments.csv`, `grades.csv`).
 
-- **Objective**: Create static, interactive, and publication-quality plots.  
-- **Tools**: Matplotlib, Seaborn (optional).  
-- **Topics**:  
-  - Line plots, bar charts, histograms, scatter plots.  
-  - Customizing plots (labels, legends, colors).  
-  - Subplots and multi-panel figures.  
-  - Introduction to Seaborn for statistical visuals.  
-  - **Hands-on**: Visualizing different datasets
+You can follow the modules in order or jump directly to the ones most relevant to you.
 
 ---
 
-### **Week 4: Pandas for Data Manipulation**  
+## **Module navigation**
 
-- **Objective**: Clean, transform, and analyze tabular data.  
-- **Tools**: Pandas.  
-- **Topics**:  
-  - DataFrames vs. Series.  
-  - Indexing (`loc`, `iloc`), filtering, and grouping.  
-  - Handling missing data (`dropna`, `fillna`).  
-  - Merging/joining datasets.  
-  - **Hands-on**: Cleaning, Exploring, transforming, visualizing and  analysing different datasets
+- **[Module 1 – Introduction to Data Analysis & Practicalities](module-1-intro-data-analysis/readme.md)**  
+  Set up your environment, understand what data analysis is, and load your first datasets.
 
----
+- **[Module 2 – NumPy Fundamentals](module-2-numpy-fundamentals/readme.md)**  
+  Learn fast numerical computing with arrays and vectorised operations.
 
-### **Week 5: Descriptive Statistics**  
+- **[Module 3 – Data Visualisation with Matplotlib & Seaborn](module-3-data-visualisation/readme.md)**  
+  Create clear, publication‑quality plots to explore and communicate insights.
 
-- **Objective**: Summarize and interpret data distributions.  
-- **Tools**: Pandas, SciPy.  
-- **Topics**:  
-  - Measures of central tendency (mean, median, mode).  
-  - Measures of spread (variance, standard deviation, IQR).  
-  - Skewness, kurtosis, and distributions (normal, binomial).  
-  - Correlation and covariance.  
-  - **Hands-on**: Exporing and analyzing a dataset.
+- **[Module 4 – Pandas for Data Manipulation](module-4-pandas-manipulation/readme.md)**  
+  Clean, transform, join, and aggregate tabular data using pandas.
 
----
+- **[Module 5 – Descriptive Statistics](module-5-descriptive-statistics/readme.md)**  
+  Summarise and interpret numerical data, including group‑wise comparisons and basic correlation.
 
-### Exercise
+- **[Module 6 – Joining DataFrames with pandas](module-6-joining-dataframes/readme.md)**  
+  Practise inner, left, right, and outer joins on realistic student/course/enrollment data.
 
-#### **Task 1: Employee Dataset Analysis**  
+- **[Module 7 – Time Series and Advanced Data Analysis](module-7-time-series/readme.md)**  
+  Work with time‑indexed data, resampling, and rolling statistics.
 
-**Objective**: Use Python and pandas to analyze the [Employee Dataset](https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset) and derive actionable insights.  You can download the [Employee Dataset](https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset) data from Kaggle, you need to create an account on Kaggle since it requires to  downolad datasets
+- **[Module 8 – SQL and Relational Databases for Analysts](module-8-sql-relational-databases/readme.md)**  
+  Learn MySQL/SQL basics, joins, and aggregates for querying relational data.
 
-**Requirements**:  
+- **[Module 9 – Introduction to Machine Learning](module-9-intro-ml/readme.md)**  
+  Understand core ML concepts and build your first classification model with scikit‑learn.
 
-1. **Data Preparation**:  
-   - Clean the dataset (handle missing values, duplicates, data types).  
-   - Validate columns like `salary`, `age`, and `management` for consistency.  
-
-2. **Exploratory Analysis**:  
-   - Generate summary statistics (mean, median, distributions).  
-   - Explore relationships between variables (e.g., `salary` vs. `education`, `management` vs. `environment` satisfaction).  
-
-3. **Visualization**:  
-   - Create visualizations (e.g., boxplots for salary distribution by education level, heatmaps for correlation analysis).  
-   - Highlight trends (e.g., attrition patterns linked to `management` scores).  
-
-4. **Key Questions**:  
-   - Does higher education correlate with salary or job retention?  
-   - Are there gender disparities in salary or promotion?  
-   - What workplace factors (e.g., `environment`, `colleagues`) most impact employee satisfaction?  
+- **[Module 10 – Tools, Resources, and Capstone Projects](module-10-tools-and-capstones/readme.md)**  
+  Explore key tools for analysts and complete end‑to‑end capstone projects.
 
 ---
 
-#### **Task 2: Cat Breed API to CSV Transformation**  
+## **Suggested learning path**
 
-**Objective**: Fetch data from [The Cat API](https://api.thecatapi.com/v1/breeds) and transform it into a structured `cats.csv` file.  
+1. **Module 1** – Install tools, learn the data lifecycle, and practice basic exploration.  
+2. **Module 2** – Build intuition for numerical operations with NumPy.  
+3. **Module 3** – Learn to visualise distributions and relationships in your data.  
+4. **Module 4** – Master pandas for real‑world data cleaning and manipulation.  
+5. **Module 5** – Deepen your understanding of descriptive statistics.  
+6. **Module 6** – Practise joining DataFrames across multiple related tables.  
+7. **Module 7** – Learn to work with time‑based data and trends.  
+8. **Module 8** – Query and manage relational data with SQL.  
+9. **Module 9** – Build and evaluate your first machine learning models.  
+10. **Module 10** – Explore tools/resources and complete at least one capstone project end‑to‑end.
 
-**Requirements**:  
-
-1. **API Data Extraction**:  
-   - Fetch breed data programmatically
-
-2. **Data Transformation**:  
-   - Map API fields to CSV headers:  
-
-     ```csv
-     ID, Name, Origin, Description, Temperament, Life Span (years), Weight (kg), Image URL
-     ```  
-
-   - **Special Cases**:  
-     - Combine `temperament` as a comma-separated string (e.g., "Active, Curious").  
-     - Convert `weight` from imperial to metric if necessary.  
-     - Extract the first image URL from the breed’s `image` object.  
-
-3. **Validation**:  
-   - Handle missing fields (e.g., default `Description` to "N/A" if empty).  
-   - Ensure numeric columns (`Life Span`, `Weight`) are properly formatted.  
-
-    **Sample CSV Row**:  
-
-    ```csv
-    ID, Name, Origin, Description, Temperament, Life Span (years), Weight (kg), Image URL
-    abys,Abyssinian,Egypt,"The Abyssinian is easy to care for...","Active, Energetic, Independent",14.5,4,https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg
-    ```  
+You can revisit modules as needed; they are all **standalone documents** that can be read and used independently.
