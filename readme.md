@@ -15,8 +15,8 @@ The material is organised into **modules**. Each module has its own `readme.md` 
   - Create and activate a virtual environment if needed; install libraries with `pip` or `conda`.
 
 - **Notebooks**
-  - Open the notebooks under `module-*` (for example `module-1/data_analysis_libs.ipynb`, `module-2/NumPy.ipynb`, etc.).  
-  - Use them alongside the corresponding module descriptions for extra examples and space to experiment.
+  - Open the notebooks under the topic‑named module folders (for example `module-1-intro-data-analysis/data_analysis_libs.ipynb`, `module-2-numpy-fundamentals/NumPy.ipynb`, etc.).  
+  - Use them alongside the corresponding module descriptions (`readme.md` in each module folder) for extra examples and space to experiment.
 
 - **Datasets**
   - Most examples and exercises use the CSV files in the `data/` folder (e.g. `weight-height.csv`, `500_Person_Gender_Height_Weight_Index.csv`, `students.csv`, `enrollments.csv`, `grades.csv`).
