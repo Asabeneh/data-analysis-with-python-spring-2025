@@ -129,5 +129,13 @@ These tasks mirror the questions in `module-6/exercise.md`.
 ### **Next steps**
 
 After mastering joins, move on to **Module 7 – Time Series and Advanced Data Analysis** to learn how to work with time‑based data and apply your pandas skills in temporal contexts.  
-You can also use the notebook `module-7/join_with_simple_dataframes.ipynb` to experiment with simplified join examples.
+You can also use the notebook `module-7-time-series/join_with_simple_dataframes.ipynb` to experiment with simplified join examples.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 5 – Descriptive Statistics](../module-5-descriptive-statistics/readme.md)  
+- Next: [Module 7 – Time Series and Advanced Data Analysis](../module-7-time-series/readme.md)
 

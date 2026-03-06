@@ -130,5 +130,13 @@ Discuss:
 ### **Next steps**
 
 Proceed to **Module 4 – Pandas for Data Manipulation** to learn how to clean and transform datasets before visualising them.  
-You can also explore the notebooks `module-3/pandas.ipynb`, `module-3/exercises.ipynb`, and any other visualisation‑related notebooks under `module-3/` for additional plotting practice.
+You can also explore the notebooks `module-3-data-visualisation/pandas.ipynb`, `module-3-data-visualisation/exercises.ipynb`, and any other visualisation‑related notebooks under this folder for additional plotting practice.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 2 – NumPy Fundamentals](../module-2-numpy-fundamentals/readme.md)  
+- Next: [Module 4 – Pandas for Data Manipulation](../module-4-pandas-manipulation/readme.md)
 

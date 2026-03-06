@@ -2,7 +2,7 @@
 
 This module introduces **SQL** (Structured Query Language) and **MySQL** for working with relational databases. You will learn how to create databases and tables, insert data, and query it using joins, aggregates, and conditions.
 
-The main reference for this module is `module-8/introduction.md`, along with the `.sql` files in `module-8/queries/`.
+The main reference for this module is `module-8-sql-relational-databases/introduction.md`, along with the `.sql` files in `module-8-sql-relational-databases/queries/`.
 
 ---
 
@@ -44,7 +44,7 @@ The main reference for this module is `module-8/introduction.md`, along with the
 
 ### **Guided example – School database**
 
-From `module-8/introduction.md`, you can follow along with the `school` database:
+From `module-8-sql-relational-databases/introduction.md`, you can follow along with the `school` database:
 
 ```sql
 CREATE DATABASE school;
@@ -103,7 +103,7 @@ JOIN courses c ON sc.course_id = c.course_id;
 
 ### **Hands‑on practice**
 
-Use `module-8/queries/*.sql` as examples and inspiration.
+Use `module-8-sql-relational-databases/queries/*.sql` as examples and inspiration.
 
 1. **Database and table creation**
    - Create a new database (e.g., `analytics_db`) and a table for events or transactions with appropriate data types.  
@@ -129,7 +129,7 @@ Use `module-8/queries/*.sql` as examples and inspiration.
    - Perform an additional analysis step in pandas (e.g., visualise course enrollments).
 
 5. **ETL exercise (link to Module 8 exercises)**
-   - See `module-8/exercises.md` for a more advanced ETL task:
+   - See `module-8-sql-relational-databases/exercises.md` for a more advanced ETL task:
      - Fetch cat breed data from an API.  
      - Transform it to match a given schema.  
      - Load it into a MySQL database (`cats_db`).  
@@ -140,5 +140,13 @@ Use `module-8/queries/*.sql` as examples and inspiration.
 ### **Next steps**
 
 Proceed to **Module 9 – Introduction to Machine Learning** to start building predictive models using scikit‑learn and applying them to datasets similar to those queried via SQL.  
-Continue to use `module-8/introduction.md` and the SQL scripts in `module-8/queries/` as a detailed reference and practice set.
+Continue to use `module-8-sql-relational-databases/introduction.md` and the SQL scripts in `module-8-sql-relational-databases/queries/` as a detailed reference and practice set.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 7 – Time Series and Advanced Data Analysis](../module-7-time-series/readme.md)  
+- Next: [Module 9 – Introduction to Machine Learning](../module-9-intro-ml/readme.md)
 

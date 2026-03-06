@@ -142,3 +142,10 @@ If you are teaching or being evaluated, projects can be reviewed on:
 - **Visualisation** – clear, correctly labelled, and relevant plots.  
 - **Communication** – concise summaries of key findings and limitations.
 
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 9 – Introduction to Machine Learning](../module-9-intro-ml/readme.md)
+

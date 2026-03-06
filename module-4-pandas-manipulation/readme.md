@@ -113,5 +113,13 @@ Questions to consider:
 ### **Next steps**
 
 Proceed to **Module 5 – Descriptive Statistics** to deepen your understanding of numeric summaries and distribution properties.  
-You can also explore the notebooks `module-3/pandas.ipynb`, `module-3/exercises.ipynb`, and `module-4/pandas-revision.ipynb` for further practice.
+You can also explore the notebooks `module-3-data-visualisation/pandas.ipynb`, `module-3-data-visualisation/exercises.ipynb`, and `module-4-pandas-manipulation/pandas-revision.ipynb` for further practice.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 3 – Data Visualisation with Matplotlib & Seaborn](../module-3-data-visualisation/readme.md)  
+- Next: [Module 5 – Descriptive Statistics](../module-5-descriptive-statistics/readme.md)
 

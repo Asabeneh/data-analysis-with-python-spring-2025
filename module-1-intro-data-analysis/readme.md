@@ -78,5 +78,12 @@ Reflect on the output:
 ### **Next steps**
 
 Continue to **Module 2 – NumPy Fundamentals** to learn how to perform fast numerical computations on arrays, which you will reuse in later modules.  
-You can also explore the notebook `module-1/data_analysis_libs.ipynb` alongside this module.
+You can also explore the notebook `module-1-intro-data-analysis/data_analysis_libs.ipynb` alongside this module.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Next: [Module 2 – NumPy Fundamentals](../module-2-numpy-fundamentals/readme.md)
 

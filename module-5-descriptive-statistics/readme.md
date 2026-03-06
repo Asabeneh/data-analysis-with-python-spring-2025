@@ -101,5 +101,13 @@ Questions:
 ### **Next steps**
 
 After completing this module, you are ready to tackle the **Mini‑projects / Capstone exercises** in Module 6, where you will apply your skills end‑to‑end on larger datasets.  
-You can also explore the `module-5` notebooks and exercises in this repository for additional practice with descriptive statistics.
+You can also explore the `module-5-descriptive-statistics` notebooks and exercises in this repository for additional practice with descriptive statistics.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 4 – Pandas for Data Manipulation](../module-4-pandas-manipulation/readme.md)  
+- Next: [Module 6 – Joining DataFrames with pandas](../module-6-joining-dataframes/readme.md)
 

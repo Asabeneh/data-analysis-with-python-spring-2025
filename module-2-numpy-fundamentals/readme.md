@@ -107,5 +107,13 @@ Key ideas:
 ### **Next steps**
 
 Proceed to **Module 3 – Data Visualisation with Matplotlib & Seaborn** to learn how to turn your numeric results into clear, informative plots.  
-You can also explore the notebook `module-2/NumPy.ipynb` alongside this module for more examples.
+You can also explore the notebook `module-2-numpy-fundamentals/NumPy.ipynb` alongside this module for more examples.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 1 – Introduction to Data Analysis & Practicalities](../module-1-intro-data-analysis/readme.md)  
+- Next: [Module 3 – Data Visualisation with Matplotlib & Seaborn](../module-3-data-visualisation/readme.md)
 

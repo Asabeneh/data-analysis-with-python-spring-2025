@@ -32,7 +32,7 @@ This module introduces **time series analysis** and extends your pandas skills t
   - Rolling mean, sum, min, max.  
 - Combining time series with joins/merges.
 
-Use the notebook `module-7/time-series-analysis.ipynb` as a companion for code‑along practice.
+Use the notebook `module-7-time-series/time-series-analysis.ipynb` as a companion for code‑along practice.
 
 ---
 
@@ -65,7 +65,7 @@ Visualise both series to see trends and smoothed patterns.
 
 ### **Hands‑on practice**
 
-These exercises are designed to align with and extend the ideas in `module-7/time-series-analysis.ipynb`.
+These exercises are designed to align with and extend the ideas in `module-7-time-series/time-series-analysis.ipynb`.
 
 1. **Basic time index setup**
    - Load a time‑based dataset (for example, any CSV with a `date` column or your own created one).  
@@ -96,5 +96,13 @@ These exercises are designed to align with and extend the ideas in `module-7/tim
 ### **Next steps**
 
 After working through time series, continue to **Module 8 – SQL and Relational Databases for Analysts** to learn how to query data directly from relational databases like MySQL.  
-You can also explore the notebook `module-7/join_with_simple_dataframes.ipynb` to reinforce your understanding of joins in combination with time‑based data.
+You can also explore the notebook `module-7-time-series/join_with_simple_dataframes.ipynb` to reinforce your understanding of joins in combination with time‑based data.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 6 – Joining DataFrames with pandas](../module-6-joining-dataframes/readme.md)  
+- Next: [Module 8 – SQL and Relational Databases for Analysts](../module-8-sql-relational-databases/readme.md)
 

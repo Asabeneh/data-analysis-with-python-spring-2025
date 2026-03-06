@@ -2,7 +2,7 @@
 
 This module provides a **practical introduction to machine learning (ML)** using Python and scikit‑learn. You will learn core concepts, algorithm families, and implement a complete classification example.
 
-The main references for this module are `module-9/enhanced-ml-guide.md`, `module-9/introduction_ml.md`, and `module-9/introduction_ml.ipynb`.
+The main references for this module are `module-9-intro-ml/enhanced-ml-guide.md`, `module-9-intro-ml/introduction_ml.md`, and `module-9-intro-ml/introduction_ml.ipynb`.
 
 ---
 
@@ -85,7 +85,7 @@ print(f"Accuracy: {accuracy:.3f}")
 print(classification_report(y_test, y_pred, target_names=iris.target_names))
 ```
 
-Visualise the confusion matrix and feature importance as in `module-9/enhanced-ml-guide.md`.
+Visualise the confusion matrix and feature importance as in `module-9-intro-ml/enhanced-ml-guide.md`.
 
 ---
 
@@ -115,5 +115,13 @@ Visualise the confusion matrix and feature importance as in `module-9/enhanced-m
 ### **Next steps**
 
 After this module, proceed to **Module 10 – Tools, Resources, and Capstone Projects** to see recommended tools for analysts and to work on full end‑to‑end projects that combine everything from data collection to modelling and communication.  
-Continue using `module-9/enhanced-ml-guide.md` as a rich reference for deeper ML concepts and real‑world considerations.
+Continue using `module-9-intro-ml/enhanced-ml-guide.md` as a rich reference for deeper ML concepts and real‑world considerations.
+
+---
+
+### **Navigation**
+
+- Back to [Course overview](../readme.md)  
+- Previous: [Module 8 – SQL and Relational Databases for Analysts](../module-8-sql-relational-databases/readme.md)  
+- Next: [Module 10 – Tools, Resources, and Capstone Projects](../module-10-tools-and-capstones/readme.md)
 
