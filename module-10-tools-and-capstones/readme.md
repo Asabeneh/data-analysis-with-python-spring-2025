@@ -133,6 +133,20 @@ These capstones integrate skills from modules on pandas, visualisation, statisti
 
 ---
 
+### **Recommended datasets for additional capstones**
+
+- **Kaggle – NYC Taxi Trips or similar time‑series/tabular datasets**  
+  Rich, real‑world data suitable for combining skills from time series, joins, and basic ML.  
+  - [New York City Taxi Trip Duration](https://www.kaggle.com/c/nyc-taxi-trip-duration)
+
+- **Kaggle – Retail sales / e‑commerce datasets**  
+  Good for end‑to‑end projects involving cleaning, feature engineering, visualisation, and simple forecasting or recommendation tasks.  
+  - [Online Retail dataset (UCI mirrored on Kaggle)](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)
+
+Consider defining your own capstone around one of these datasets, following the same structure as the employee and cat projects: data prep → EDA → visualisation → (optional) modelling → communication.
+
+---
+
 ### **Assessment / review guidelines (optional)**
 
 If you are teaching or being evaluated, projects can be reviewed on:

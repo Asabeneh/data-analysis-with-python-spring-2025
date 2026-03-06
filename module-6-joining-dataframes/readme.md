@@ -126,6 +126,20 @@ These tasks mirror the questions in `module-6/exercise.md`.
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Chinook sample database (exported to CSV)**  
+  Multiple related tables (customers, invoices, invoice lines, tracks, albums) – ideal for practising inner/left joins and building reporting tables in pandas.  
+  - [Chinook database download](https://github.com/lerocha/chinook-database)
+
+- **Northwind sample database**  
+  Classic relational database with orders, customers, products, and employees; good for more complex join scenarios.  
+  - [Northwind sample DB (Microsoft docs)](https://learn.microsoft.com/en-us/sql/samples/wide-world-importers-oltp-install-configure)
+
+Export the tables to CSV or query them into pandas, then replicate the enrollment‑style join questions (who bought what, by whom, and when) using these richer schemas.
+
+---
+
 ### **Next steps**
 
 After mastering joins, move on to **Module 7 – Time Series and Advanced Data Analysis** to learn how to work with time‑based data and apply your pandas skills in temporal contexts.  

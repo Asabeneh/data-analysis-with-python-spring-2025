@@ -127,6 +127,20 @@ Discuss:
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Gapminder World dataset**  
+  Country‑level indicators (life expectancy, GDP per capita, population) across years – excellent for line plots, scatter plots, and faceted visualisations.  
+  - [Gapminder data (via Gapminder)](https://www.gapminder.org/data/)
+
+- **World Happiness Report (Kaggle)**  
+  Annual happiness scores with multiple explanatory variables; great for bar charts, scatter plots, and correlation visuals.  
+  - [World Happiness Report dataset](https://www.kaggle.com/datasets/unsdsn/world-happiness)
+
+Use these datasets to recreate and extend the example plots (histograms, boxplots, scatter plots, subplots) in this module.
+
+---
+
 ### **Next steps**
 
 Proceed to **Module 4 – Pandas for Data Manipulation** to learn how to clean and transform datasets before visualising them.  

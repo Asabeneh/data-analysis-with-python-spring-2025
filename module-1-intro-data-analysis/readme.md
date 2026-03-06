@@ -75,6 +75,20 @@ Reflect on the output:
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Kaggle – Titanic: Machine Learning from Disaster**  
+  A classic tabular dataset with passenger information (age, sex, class, fare, etc.) and survival labels – great for exploration and basic cleaning.  
+  - [Titanic dataset on Kaggle](https://www.kaggle.com/c/titanic)
+
+- **UCI Machine Learning Repository – Iris dataset**  
+  Small, clean dataset with flower measurements; ideal for simple exploration and plotting.  
+  - [Iris dataset description](https://archive.ics.uci.edu/ml/datasets/iris)
+
+You can download any of these as CSV, place them in the `data/` folder, and repeat the loading and basic exploration steps from this module.
+
+---
+
 ### **Next steps**
 
 Continue to **Module 2 – NumPy Fundamentals** to learn how to perform fast numerical computations on arrays, which you will reuse in later modules.  

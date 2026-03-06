@@ -110,6 +110,20 @@ Questions to consider:
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Chinook sample database (SQLite)**  
+  A small music store database with tables for customers, invoices, tracks, albums, etc. – ideal for exporting tables to CSV and practising merges, groupbys, and joins in pandas.  
+  - [Chinook database download](https://github.com/lerocha/chinook-database)
+
+- **Kaggle – Student Performance in Exams**  
+  Single‑table dataset that works well for filtering, grouping, and aggregations.  
+  - [Students Performance in Exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
+
+Try exporting or downloading these datasets, then reproduce the filtering, grouping, and joining patterns from this module using real‑world data.
+
+---
+
 ### **Next steps**
 
 Proceed to **Module 5 – Descriptive Statistics** to deepen your understanding of numeric summaries and distribution properties.  

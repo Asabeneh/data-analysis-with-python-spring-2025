@@ -137,6 +137,20 @@ Use `module-8-sql-relational-databases/queries/*.sql` as examples and inspiratio
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **MySQL sample databases – Sakila and World**  
+  Official sample databases with realistic schemas for practising SELECTs, joins, and aggregates.  
+  - [MySQL Sample Databases (Sakila, World)](https://dev.mysql.com/doc/index-other.html)
+
+- **PostgreSQL sample – Pagila / dvdrental (can be used conceptually with MySQL)**  
+  Alternative movie‑rental schemas similar to Sakila; helpful for additional join and reporting practice.  
+  - [Pagila sample database](https://github.com/devrimgunduz/pagila)
+
+Install one of these sample databases in MySQL (or another RDBMS), then recreate the kinds of queries shown in this module (joins, groupbys, HAVING, subqueries) against their tables.
+
+---
+
 ### **Next steps**
 
 Proceed to **Module 9 – Introduction to Machine Learning** to start building predictive models using scikit‑learn and applying them to datasets similar to those queried via SQL.  

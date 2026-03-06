@@ -93,6 +93,20 @@ These exercises are designed to align with and extend the ideas in `module-7-tim
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Airline Passengers dataset (Kaggle / many sources)**  
+  Monthly total passengers over years; classic example for resampling, trend analysis, and rolling averages.  
+  - [International Airline Passengers dataset](https://www.kaggle.com/datasets/rakannimer/air-passengers)
+
+- **Kaggle – Daily Temperature Time Series**  
+  Daily temperatures across years; great for practising daily → monthly resampling, rolling windows, and seasonal patterns.  
+  - [Daily minimum temperatures dataset](https://www.kaggle.com/datasets/jbrownlee/daily-min-temperatures)
+
+Download these datasets and apply the time‑indexing, resampling, and rolling techniques demonstrated in this module.
+
+---
+
 ### **Next steps**
 
 After working through time series, continue to **Module 8 – SQL and Relational Databases for Analysts** to learn how to query data directly from relational databases like MySQL.  

@@ -98,6 +98,20 @@ Questions:
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Kaggle – 500 Person Gender Height Weight Dataset**  
+  Contains height, weight, gender, and BMI index; perfect for computing descriptive statistics, exploring group differences, and identifying outliers.  
+  - [500 Person Gender Height Weight Dataset](https://www.kaggle.com/datasets/yersever/500-person-gender-height-weight-bodymassindex)
+
+- **Kaggle – Medical Cost Personal Datasets**  
+  Insurance charges with demographic and health‑related variables (age, BMI, smoking, etc.); excellent for exploring distributions, relationships, and simple correlations.  
+  - [Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)
+
+Use these datasets to deepen your practice with `.describe()`, group‑wise summaries, outlier rules, and correlation analyses.
+
+---
+
 ### **Next steps**
 
 After completing this module, you are ready to tackle the **Mini‑projects / Capstone exercises** in Module 6, where you will apply your skills end‑to‑end on larger datasets.  

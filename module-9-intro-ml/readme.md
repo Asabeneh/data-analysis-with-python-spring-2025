@@ -112,6 +112,21 @@ Visualise the confusion matrix and feature importance as in `module-9-intro-ml/e
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Kaggle – Titanic: Machine Learning from Disaster**  
+  Very popular binary classification problem (survived vs not survived); perfect for trying multiple algorithms and practising evaluation metrics.  
+  - [Titanic competition](https://www.kaggle.com/c/titanic)
+
+- **UCI – Wine Quality and Breast Cancer datasets**  
+  Classic tabular datasets for regression (wine quality) and binary classification (breast cancer); useful for comparing algorithms and feature importance.  
+  - [Wine Quality](https://archive.ics.uci.edu/ml/datasets/wine+quality)  
+  - [Breast Cancer Wisconsin](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic))
+
+These datasets pair well with the train/test split, model training, and evaluation pipeline demonstrated in this module.
+
+---
+
 ### **Next steps**
 
 After this module, proceed to **Module 10 – Tools, Resources, and Capstone Projects** to see recommended tools for analysts and to work on full end‑to‑end projects that combine everything from data collection to modelling and communication.  

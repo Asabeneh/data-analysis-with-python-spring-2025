@@ -104,6 +104,20 @@ Key ideas:
 
 ---
 
+### **Recommended datasets for further practice**
+
+- **Kaggle – 500 Person Gender Height Weight Dataset**  
+  The same dataset used here, available directly from Kaggle if you want to experiment independently.  
+  - [500 Person Gender Height Weight Dataset](https://www.kaggle.com/datasets/yersever/500-person-gender-height-weight-bodymassindex)
+
+- **UCI – Wine Quality dataset**  
+  Numeric measurements for red and white wines; ideal for practising vectorised operations, aggregations, and simple simulations.  
+  - [Wine Quality dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality)
+
+Download and place these CSVs under `data/` (or a similar folder) and try re‑implementing summaries and simulations using pure NumPy arrays.
+
+---
+
 ### **Next steps**
 
 Proceed to **Module 3 – Data Visualisation with Matplotlib & Seaborn** to learn how to turn your numeric results into clear, informative plots.  
