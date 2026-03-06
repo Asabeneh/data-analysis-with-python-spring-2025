@@ -20,6 +20,46 @@ This module sets up your environment and introduces the full data analysis lifec
 
 ---
 
+### **Setting up your environment**
+
+If you do not already have a Python data analysis environment, follow these steps (Windows / macOS / Linux):
+
+1. **Install Python 3.9+**  
+   - Download from `https://www.python.org/downloads/`.  
+   - On Windows, during installation, check **“Add Python to PATH”**.
+
+2. **Install a code editor or notebook environment**  
+   - Recommended options:  
+     - **VS Code** – general‑purpose editor with Python and Jupyter support.  
+     - **JupyterLab** / **Anaconda** – notebook‑first workflows.  
+     - **Google Colab** – runs in the browser, no local install needed.
+
+3. **Create a virtual environment (recommended for local work)**  
+   From a terminal in the project root:
+
+   ```bash
+   python -m venv .venv
+   # Activate (Windows PowerShell)
+   .venv\Scripts\Activate.ps1
+   # or (bash on macOS/Linux)
+   source .venv/bin/activate
+   ```
+
+4. **Install core libraries**  
+   Inside the activated environment:
+
+   ```bash
+   pip install numpy pandas matplotlib seaborn jupyter
+   ```
+
+5. **Open the project in your tool of choice**  
+   - In VS Code, open this folder and use the **Jupyter** extension to run notebooks.  
+   - In JupyterLab, run `jupyter lab` from the terminal in this folder.
+
+Once this is set up, you can open `module-1-intro-data-analysis/data_analysis_libs.ipynb` (or any other notebook) and run the cells alongside this `readme.md`.
+
+---
+
 ### **Topics**
 
 - What is data analysis? (descriptive, diagnostic, predictive).  
@@ -133,6 +173,35 @@ Reflect on the output:
 
 3. **Short reflection**
    - In a markdown cell (in a notebook of your choice), describe in 3–5 sentences what “data analysis” means in your own words, using the examples from this module.
+
+---
+
+### **Mini‑project – Explore a new dataset end‑to‑end**
+
+Pick a small, publicly available dataset (for example one of the recommended ones below, or any CSV from `data/`), and work through the full mini‑workflow:
+
+1. **Question**  
+   - Write down 2–3 questions you want to answer with the data (e.g. “Which students are at risk of failing?”, “How do heights differ by gender?”).
+
+2. **Load and inspect**  
+   - Load the CSV into a pandas `DataFrame`.  
+   - Inspect shape, column names, and a few rows.  
+   - Check data types and obvious missing values.
+
+3. **Simple cleaning**  
+   - Fix any obviously wrong types (e.g. numeric columns stored as strings).  
+   - Decide how to handle missing values for this simple exploration (drop vs fill with a reasonable default).
+
+4. **Basic exploration**  
+   - Compute summary statistics for key numeric columns.  
+   - Do at least one simple filter (e.g. “rows where score < 50”).  
+   - Create at least one simple chart (histogram or bar plot) to visualise an interesting variable.
+
+5. **Short write‑up**  
+   - In markdown cells, answer your initial questions in 5–8 sentences.  
+   - Note any limitations of the data or analysis (e.g. small sample size, missing context).
+
+This mini‑project prepares you for the deeper tools introduced in later modules by reinforcing the idea that analysis is a **full loop from question to communication**, even when you only use very simple techniques.
 
 ---
 
